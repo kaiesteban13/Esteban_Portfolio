@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    margin-top: 150px;
+}
+
+.card-set {
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    background-color: lemonchiffon;
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid salmon;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#output {
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: royalblue;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin: 3px;
+    padding: 10px 20px;
+    background-color: salmon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: darksalmon;
+    transform: scale(1.1);
+}

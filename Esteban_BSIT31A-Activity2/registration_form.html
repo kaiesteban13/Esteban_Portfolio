@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 0px; margin: 0px;">
+
+    <!-- THIS PART IS FOR THE HEADER -->
+    <header style="background-color: cornflowerblue; text-align: center; padding: 100px;">
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <!-- THIS PART IS FOR THE NAVIGATION TAB -->
+    <nav style="font-size: 25px; background-color: bisque; display: flex; padding: 50px; justify-content: center; gap: 5%">
+            <a href="home.html" target="_self" title="Proceed to Home page">Home</a>
+            <a href="registration_form.html" target="_self" title="Proceed to Registration Form page">Registration Form</a>
+            <a href="grade_table.html" target="_self" title="Proceed to Grade Table page">Grade Table</a>
+            <a href="my_profile.html" target="_self" title="Proceed to My Profile page">My Profile</a>
+    </nav>
+
+    <br>
+    <br>
+
+    <div style="text-align: center; font-size: 20px; background-color: lightblue; padding: 15px;">
+        <h2>Student Registration Form</h2>
+        <p>Please fill out the form below to register as a student.</p>
+
+        <form style="border: 2px solid; width: 600px; margin: 0 auto; padding: 20px; background-color: lightgray;">
+            <label>Student Name:</label>
+            <br>
+            <input type="text">
+
+            <br>
+            <br>
+
+            <label>Student Number:</label>
+            <br>
+            <input type="text">
+
+            <br>
+            <br>
+
+            <label>Email:</label>
+            <br>
+            <input type="text">
+
+            <br>
+            <br>
+
+            <label>Gender:</label>
+            <br>
+            <input type="radio">Male &nbsp; <input type="radio">Female
+
+            <br>
+            <br>
+
+            <label>Course:</label>
+            <br>
+            <select name="dropdown">
+                <option value="bscs">BSCS</option>
+                <option value="bsit">BSIT</option>
+                <option value="bshm">BSHM</option>
+                <option value="bstm">BSTM</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label>Skills:</label>
+            <br>
+            <input type="checkbox">HTML &nbsp; <input type="checkbox">CSS &nbsp; <input type="checkbox">JavaScript
+
+            <br>
+            <br>
+
+            <label>Upload Picture:</label>
+            <br>
+            <input type="file" name="fileupload" accept="image/*"/>
+
+            <br>
+            <br>
+
+            <label>Address:</label>
+            <br>
+            Description: <br/>
+            <textarea rows="5" cols="50" name="Description" placeholder="Enter your address here."></textarea>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- THIS PART IS FOR THE END OF PAGES -->
+    <footer style="background-color: darkorange; padding: 100px; text-align: center;">
+        <h3>Esteban Personal Website @2026</h3>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+/* For Navigation part */
+header{
+    background-color: #A9111B;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.navi {
+    width: 500px;
+    padding: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
+    font-size: 25px;
+}
+
+
+/* For Home part */
+.Home {
+    background-color:  #DCB953;
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Home section {
+    padding: 150px;
+}
+
+.Home section h1 {
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.Home section p {
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+.tokyo {
+    padding: 50px;
+}
+
+.tokyo img {
+    border-radius: 25px;
+}
+
+img:hover {
+    transition: 1s ease;
+    transform: scale(1.1,1.1);
+}
+
+/* For Places part */
+.places {
+    background-color: darksalmon;
+    border: 2px solid #222121;
+    height: 750px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.shinjuku {
+    display: flex;
+}
+
+.shinjuku section {
+    background-color: #F9F9F6;
+    flex: 5;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.shinjuku aside {
+    flex: 2;
+}
+
+.shinjuku aside img {
+    width: 300px;
+    height: 250px;
+    margin-top: 55px;
+    border-radius: 20px;
+}
+
+.shibuya {
+    display: flex;
+}
+
+.shibuya section {
+    background-color: #F9F9F6;
+    flex: 5;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.shibuya aside {
+    flex: 2;
+}
+
+.shibuya aside img {
+    width: 300px;
+    height: 250px;
+    margin-top: 55px;
+    border-radius: 20px;
+}
+
+/* For Culture part */
+.cultures {
+    background-color: #DCB953;
+    border: 2px solid #222121;
+    height: 750px;
+    border-radius: 15px;
+    margin: 5px;
+    height: 900px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trad {
+    margin: 10px;
+}
+
+.container1 {
+    background-color: red;
+    padding: 25px;
+    border: 2px solid;
+    display: flex;
+    width: 500px;
+    font-variant: small-caps;
+    margin: 25px;
+    border-radius: 15px;
+    height: 800px;
+}
+
+.container1 dl {
+    color: white;
+}
+
+.container1 img {
+    height: 250px;
+    width: 250px;
+}
+
+.container1 .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop {
+    margin: 10px;
+}
+
+.subculture {
+    background-color: #FF007F;
+    padding: 25px;
+    border: 2px solid;
+    display: flex;
+    width: 500px;
+    font-variant: small-caps;
+    margin: 25px;
+    border-radius: 15px;
+    height: 800px;
+}
+
+.subculture dl {
+    color: white;
+}
+
+.subculture img {
+    height: 250px;
+    width: 250px;
+}
+
+.subculture .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corp {
+    margin: 10px;
+}
+
+.workcult {
+    background-color: #c2c2b5;
+    padding: 25px;
+    border: 2px solid;
+    display: flex;
+    width: 500px;
+    font-variant: small-caps;
+    margin: 25px;
+    border-radius: 15px;
+    height: 800px;
+}
+
+.workcult img {
+    height: 250px;
+    width: 250px;
+}
+
+.workcult .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* For About part */
+.about {
+    background-color: bisque;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.about h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.about section{
+    text-align: center;
+    font-variant: small-caps;
+    padding: 20px;
+}
+
+
+/* For Footer part */
+footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: ghostwhite;
+    border: 1px solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+}
