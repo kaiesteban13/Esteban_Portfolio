@@ -14,12 +14,11 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -35,7 +34,6 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition-behavior: smooth;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -59,11 +57,10 @@ nav ul {
 
 #home {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 50vh;
     background-color: #e0e0e0;
-    justify-content: space-evenly;
     border-bottom: 2px solid #333;
 }
 
@@ -148,14 +145,11 @@ img:hover {
 
 #skills h2 {
     font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     color: black;
     background-color: seashell;
     border-radius: 20px;
-    margin-left: 450px;
-    margin-right: 450px;
+    max-width: 400px;
 }
 
 .skill-container {
@@ -214,28 +208,28 @@ img:hover {
 
 #projects h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin: 0 auto 50px auto;
     text-align: center;
-    margin-bottom: 50px;
     color: white;
     background-color: #333;
-    margin-left: 750px;
-    margin-right: 750px;
+    max-width: 400px;
     border-radius: 20px;
 }
 
 .project-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .project-container .project-card {
-    width: 300px;
+    width: 100%; /* Changed from 300px to 100% so it fits grid columns cleanly */
     text-align: center;
     background-color: white;
     padding: 20px;
-    margin: 10px;
     border-radius: 5px;
     box-shadow: 0 5px 5px 0 black;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -257,12 +251,14 @@ img:hover {
 }
 
 .project-card #abtn {
+    display: inline-block;
     background-color: #333;
     color: white;
     font-size: 13px;
-    padding: 8px;
+    padding: 8px 15px;
     text-decoration: none;
     border-radius: 15px;
+    margin-top: 10px;
 }
 
 /* Contact Section */
@@ -288,7 +284,16 @@ footer {
     padding: 20px 0;
 }
 
+
 /* Responsive adjustments for tablets and mobile devices */
+
+@media (max-width: 900px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr); /* Drops to 2 columns on tablets */
+        padding: 0 20px;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -323,8 +328,15 @@ footer {
     }
 
     #about h2, #skills h2, #projects h2 {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-container {
+        grid-template-columns: 1fr; /* Drops to 1 single column on mobile phones */
+        padding: 0 20px;
     }
 }

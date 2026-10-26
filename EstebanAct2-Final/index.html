@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Application</title>
+</head>
+
+    <style>
+        body {
+            text-align: center;
+            margin-top: 75px;
+            font-family: Algerian;
+            background: linear-gradient(90deg, royalblue, red)
+        }
+
+        button {
+            background-color: royalblue;
+            border: none;
+            color: white;
+            border-radius: 25px;
+            padding: 15px 35px;
+            width: 200px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            font-size: 15px;
+            transform: scale(0.9);
+        }
+
+        #message {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #dm {
+            font-size: 200px;
+            display: none;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+            
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+        .back-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+    </style>
+
+<body id="body">
+
+    <a href="https://esteban-portfolio-rust.vercel.app/" class="back-btn">BACK TO PORTFOLIO</a>
+
+    <h1> JavaScript Demo </h1>
+
+    <button id="loadBtn">
+        Load
+    </button>
+
+    <button id="dashBtn">
+        Dashboard
+    </button>
+
+    <p id="message"> Waiting.... </p>
+
+    <p id="profile">Profile</p>
+    <p id="grades">Grades</p>
+    <p id="schedules">Schedules</p>
+
+
+    <p id="dm">Dark Mode</p>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

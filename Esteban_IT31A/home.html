@@ -8,7 +8,37 @@
         <h1 align="center" style="font-size: 75px; font-variant: small-caps;">My Personal Website</h1>
         <hr>
     </head>
+
+    <style>
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+            
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+        .back-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+    </style>
+
     <body>
+
+        <a href="https://esteban-portfolio-rust.vercel.app/" class="back-btn">BACK TO PORTFOLIO</a>
+
         <center>
             <h3 style="font-size: 25px;">
                 <a href="MyInfo.html" target="_parent" title="Proceed to My Information page">My Information</a>
